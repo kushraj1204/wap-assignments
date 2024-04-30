@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(73, 69, 69, 0.8);
+    color: #FFFFFF;
+}
+.nameHeader{
+    color: rgb(65, 160, 243);
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.name{
+    color: rgb(102, 250, 201);
+    font-size: 1.1em;
+}
+.a:visited{
+    color: rgb(8, 36, 61);
+}
+
+#neighbourList > li {
+    list-style: disc;
+    font-style: oblique;
+}
+
+#movieList > li > a {
+    font-style:oblique;
+    color:white
+}
