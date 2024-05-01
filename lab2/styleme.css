@@ -23,7 +23,7 @@ body{
 }
 .movieList > li {
    
-    list-style: none;
+    list-style: decimal;
 }
 
 .movieList > li > a {
@@ -37,7 +37,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .onCampusList > li{
-    list-style: decimal;
+    list-style: circle;
 }
 a{
     text-decoration: none;
@@ -50,3 +50,18 @@ a:hover{
     color: rgb(172, 79, 79);
     font-style: normal;
 }
+p::first-letter {
+    font-size: 3em; 
+}
+
+.movieDescList > li {
+    list-style: none;
+    color: yellowgreen;
+}
+.movieDescValue{
+    margin-left: 50px;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    font-family: monospace;
+}
+
