@@ -84,8 +84,8 @@ input{
     margin-top: 20px;
 }
 .summaryRow{
-    float: right;
     text-align: right;
+    padding-right: 100px;
 }
 .checker{
     position: fixed;
