@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(68, 77, 85);
+    color: aliceblue;
+}
+.welcomeText{
+    font-size: 30px;
+    font-family: monospace;
+}
+.button{
+    padding: 10px;
+    border: 2px;
+    color: rgb(68, 77, 85);
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.button:hover{
+    color: rgb(123, 123, 231);
+    font-size: 17px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.headerUserInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+}
+.cartImage{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.cartImage:hover{
+    height: 49px;
+    width: 49px;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid aliceblue;
+}
+tr td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px dotted aliceblue;
+    
+}
+th,td{
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.cartInc{
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;    
+}
+.cartInc:hover{
+    color: rgb(187, 187, 235);
+    font-size: 26px;    
+}
+.placeOrder{
+    width: 100px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.summaryRow{
+    float: right;
+    text-align: right;
+}
+.checker{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+th{
+    background-color: rgb(116, 119, 250);
+}
+.section{
+    margin: 50px;
+}
