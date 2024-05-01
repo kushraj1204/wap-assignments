@@ -10,17 +10,38 @@ body{
 .name{
     color: rgb(102, 250, 201);
     font-size: 1.1em;
-}
-.a:visited{
-    color: rgb(8, 36, 61);
+    font-weight: bold;
 }
 
 #neighbourList > li {
     list-style: disc;
     font-style: oblique;
 }
+.movieList  {
+   
+    color: pink;
+}
+.movieList > li {
+   
+    list-style: none;
+}
 
-#movieList > li > a {
+.movieList > li > a {
+    font-size: 18px;
     font-style:oblique;
-    color:white
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.onCampusList{
+    font-family: 'Courier New', Courier, monospace;
+}
+.onCampusList > li{
+    list-style: decimal;
+}
+a:visited{
+    color: lightgreen;
+}
+a:hover{
+    color: rgb(172, 79, 79);
 }
