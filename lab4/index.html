@@ -17,31 +17,31 @@
 
         <form action="#" method="post">
             <div class="mainContainer">
-                <div>
+                <div class="leftChild">
                     <div class="formUnit">
                         <label for="fname" class="formUnitLabel">
                             First Name<span class="required">*</span>
                         </label>
-                        <input type="text" name="fname" id="fname" class="formUnitField">
+                        <input type="text" name="fname" id="fname" class="formUnitField" required>
                     </div>
                     <div class="formUnit">
                         <label for="lname" class="formUnitLabel">Last Name<span class="required">*</span>
                         </label>
-                        <input type="text" name="lname" id="lname" class="formUnitField">
+                        <input type="text" name="lname" id="lname" class="formUnitField" required>
                     </div>
                     <div class="formUnit">
                         <label for="company" class="formUnitLabel">
                             Company/Institution
                             <span class="required">*</span>
                         </label>
-                        <input type="text" name="company" id="company" class="formUnitField">
+                        <input type="text" name="company" id="company" class="formUnitField" required>
                     </div>
                     <div class="formUnit">
                         <label for="address" class="formUnitLabel">
                             Address
                             <span class="required">*</span>
                         </label>
-                        <textarea class="formUnitField" name="address" id="address" ></textarea>
+                        <textarea class="formUnitField" name="address" id="address" required></textarea>
                     </div>
                     <div class="formUnit">
                         <label for="city" class="formUnitLabel">
@@ -51,11 +51,63 @@
                     </div>
                     <div class="formUnit">
                         <label for="state" class="formUnitLabel">
-                            State
+                            State/Province/Region
                         </label>
                         <select class="formUnitField" name="state" id="state">
                             <option value="">Select</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
                         </select>
+                        
                     </div>
                     <div class="formUnit">
                         <label for="country" class="formUnitLabel">
@@ -63,6 +115,123 @@
                         </label>
                         <select class="formUnitField" name="country" id="country">
                             <option value="">Select</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, The Democratic Republic of The</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote D'ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="US">United States of America</option>
                         </select>
                     </div>
                     <div class="formUnit" >
@@ -70,25 +239,33 @@
                             Email
                             <span class="required">*</span>
                         </label>
-                        <input type="email" class="formUnitField" name="email" id="email">
+                        <input type="email" class="formUnitField" name="email" id="email" required>
                     </div>
                     <div class="formUnit">
                         <label for="phone" class="formUnitLabel">
                             Phone Number
                             <span class="required">*</span>
                         </label>
-                        <input type="tel" class="formUnitField" name="phone" id="phone">
+                        <input type="tel" class="formUnitField" name="phone" id="phone" required>
                     </div>
                 </div>
-                <div>
+                <div class="rightChild">
                     <span class="formSectionText">Lunch</span>
                     <div class="formUnit">
                         <label for="mealType" class="formUnitLabel">
                             Meal Preference
                         </label>
                         <select class="formUnitField" name="mealType" id="mealType">
-                            <option value="">Vegeterian</option>
+                            <option value="">Select</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="glutenFree">Gluten-Free</option>
+                            <option value="dairyFree">Dairy-Free</option>
+                            <option value="nutFree">Nut-Free</option>
+                            <option value="halal">Halal</option>
+                            <option value="kosher">Kosher</option>
                         </select>
+                        
                     </div>
                     <div class="formSectionText">Payment Details</div>
                     <div class="formUnit">
@@ -96,9 +273,9 @@
                             <span>Payment Mode</span>
                         </label>
                         <div class="formUnitField">
-                            <span class="checkboxLine"><input type="checkbox" name="paymentMode" id="paymentCash">Cash</span>
-                            <span class="checkboxLine"><input type="checkbox" name="paymentMode">Cheque</span>
-                            <span class="checkboxLine"><input type="checkbox" name="paymentMode">Demand Draft</span>
+                            <span class="checkboxLine"><input type="checkbox" class="chkbox" name="paymentMode" id="paymentCash">Cash</span>
+                            <span class="checkboxLine"><input type="checkbox" class="chkbox" name="paymentMode">Cheque</span>
+                            <span class="checkboxLine"><input type="checkbox" class="chkbox"  name="paymentMode">Demand Draft</span>
                         </div>
                     </div>
                     <div class="formUnit">

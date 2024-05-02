@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0px;
     background-color: white;
     border: 2px solid #a3cbbd;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 920px;
+    max-width: 1100px;
     margin: auto;
     margin-top: 20px;
 }
@@ -34,7 +38,7 @@ body {
 }
 
 .registerText {
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 20px;
 }
 
@@ -66,17 +70,6 @@ label {
     font-weight: bold;
 }
 
-.btn {
-    background-color: #a3cbbd;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right
-    : 10px;
-}
-
 .required {
     color: red;
     font-weight: 100;
@@ -87,13 +80,21 @@ input,
 select,
 textarea {
     padding-left: 10px;
-    min-height: 22px;
-    min-width: 100px;
+    height: 30px;
+    width: 225px;
     resize: none;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #a3cbbd; 
+    box-shadow: 0 0 5px #a3cbbd; 
+    outline: none; 
 }
 textarea{
     height: 100px;
 }
+
 
 .checkboxLine {
     display: flex;
@@ -106,4 +107,29 @@ textarea{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.btn {
+    background-color: #a3cbbd;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+}
+.rightChild{
+    padding-right: 30px;
+}
+.leftChild{
+    padding-left: 30px;
+}
+.chkbox{
+    height: 15px;
+}
+.chkbox:focus{
+    border: none;
+    box-shadow: none;
 }
