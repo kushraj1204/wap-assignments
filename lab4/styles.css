@@ -1,0 +1,103 @@
+body {
+    padding: 0px;
+    background-color: white;
+    border: 2px solid #a3cbbd;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 920px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.header {
+    background-color: #a3cbbd;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #e3e2e2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.headerInfo {
+    font: 10px;
+    padding-left: 30px;
+}
+
+.formSectionText {
+    text-decoration: underline;
+}
+
+.registerText {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 20px;
+}
+
+.formUnit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formUnitLabel {
+    margin-right: 10px;
+}
+
+.formUnitField {
+    margin-left: 10px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #a3cbbd;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right
+    : 10px;
+}
+
+.required {
+    color: red;
+    font-weight: 100;
+    margin-left: 5px;
+}
+
+input,
+select,
+textarea {
+    padding-left: 10px;
+    min-height: 22px;
+    min-width: 100px;
+    resize: none;
+}
+textarea{
+    height: 100px;
+}
+
+.checkboxLine {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}

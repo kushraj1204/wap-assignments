@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header"><span class="bold">Workshop Registration</span>
+        <span class="headerInfo">More Actions&#9660;</span>
+    </div>
+    <div>
+        <div class="registerText formSectionText">Register now while seats are available!</div>
+
+        <form action="#" method="post">
+            <div class="mainContainer">
+                <div>
+                    <div class="formUnit">
+                        <label for="fname" class="formUnitLabel">
+                            First Name<span class="required">*</span>
+                        </label>
+                        <input type="text" name="fname" id="fname" class="formUnitField">
+                    </div>
+                    <div class="formUnit">
+                        <label for="lname" class="formUnitLabel">Last Name<span class="required">*</span>
+                        </label>
+                        <input type="text" name="lname" id="lname" class="formUnitField">
+                    </div>
+                    <div class="formUnit">
+                        <label for="company" class="formUnitLabel">
+                            Company/Institution
+                            <span class="required">*</span>
+                        </label>
+                        <input type="text" name="company" id="company" class="formUnitField">
+                    </div>
+                    <div class="formUnit">
+                        <label for="address" class="formUnitLabel">
+                            Address
+                            <span class="required">*</span>
+                        </label>
+                        <textarea class="formUnitField" name="address" id="address" ></textarea>
+                    </div>
+                    <div class="formUnit">
+                        <label for="city" class="formUnitLabel">
+                            City
+                        </label>
+                        <input type="text" name="city" id="city" class="formUnitField">
+                    </div>
+                    <div class="formUnit">
+                        <label for="state" class="formUnitLabel">
+                            State
+                        </label>
+                        <select class="formUnitField" name="state" id="state">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="formUnit">
+                        <label for="country" class="formUnitLabel">
+                            Country
+                        </label>
+                        <select class="formUnitField" name="country" id="country">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="formUnit" >
+                        <label for="email" class="formUnitLabel" >
+                            Email
+                            <span class="required">*</span>
+                        </label>
+                        <input type="email" class="formUnitField" name="email" id="email">
+                    </div>
+                    <div class="formUnit">
+                        <label for="phone" class="formUnitLabel">
+                            Phone Number
+                            <span class="required">*</span>
+                        </label>
+                        <input type="tel" class="formUnitField" name="phone" id="phone">
+                    </div>
+                </div>
+                <div>
+                    <span class="formSectionText">Lunch</span>
+                    <div class="formUnit">
+                        <label for="mealType" class="formUnitLabel">
+                            Meal Preference
+                        </label>
+                        <select class="formUnitField" name="mealType" id="mealType">
+                            <option value="">Vegeterian</option>
+                        </select>
+                    </div>
+                    <div class="formSectionText">Payment Details</div>
+                    <div class="formUnit">
+                        <label for="paymentCash" class="formUnitLabel">
+                            <span>Payment Mode</span>
+                        </label>
+                        <div class="formUnitField">
+                            <span class="checkboxLine"><input type="checkbox" name="paymentMode" id="paymentCash">Cash</span>
+                            <span class="checkboxLine"><input type="checkbox" name="paymentMode">Cheque</span>
+                            <span class="checkboxLine"><input type="checkbox" name="paymentMode">Demand Draft</span>
+                        </div>
+                    </div>
+                    <div class="formUnit">
+                        <label for="chequeNo" class="formUnitLabel">
+                            DD/Cheque No
+                        </label>
+                        <input type="text" class="formUnitField" name="chequeNo" id="chequeNo">
+                    </div>
+                    <div class="formUnit">
+                        <label for="bankName" class="formUnitLabel">
+                            Drawn On (Bank Name)
+                        </label>
+                        <input type="text" class="formUnitField" name="bankName" id="bankName" >
+                    </div>
+                    <div class="formUnit">
+                        <label for="payableAt" class="formUnitLabel">
+                            Payable At
+                        </label>
+                        <input type="date" class="formUnitField" name="payableAt" id="payableAt">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <input class="btn" type="submit">
+                <input class="btn" type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
