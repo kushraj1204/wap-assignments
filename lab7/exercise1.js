@@ -59,14 +59,15 @@ let group3 = {
 group3.showList();
 console.log("\n\n");
 
-//Solution4: Normal for loop
+//Solution4: Passing this as  a param of forEach
 let group4 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
-        for (let i = 0; i < this.students.length; i++) {
-            console.log(this.title + ": " + this.students[i]);
-        }
+        this.students.forEach(function (student) {
+            console.log(this.title + ": " + student
+            );
+        },this);
     }
 };
 
