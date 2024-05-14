@@ -1,0 +1,11 @@
+The program gives an out as:
+{ firstname: 'John', lastname: 'Smith' }
+
+The function receives 2 variables exports=null and module={exports{}}.
+Then module.exports is assigned to the exports.
+Then a property firstName is assigned to exports which is also updating module.exports.
+Then another property lastname is also added to module.exports directly.
+At another step exports is now being reassigned a new object with a function variable getFullName.
+This has no impact on module.exports though.
+And then in the end, module.exports is being returned from the function which as we know have the
+attributes  firstname and lastname hence giving an output as such.
