@@ -1,0 +1,4 @@
+
+There is an error while running this code. The exports of module is a returned when require is called upon a js file. 
+So, since our exports is an object with a getName function it gets assigned to the getName in app.js.
+So getName cannot be directly be called since it doesnt exist. It should be called as getName.getName();

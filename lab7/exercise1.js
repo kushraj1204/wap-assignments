@@ -88,3 +88,17 @@ let group5 = {
 group5.showList();
 console.log("\n\n");
 
+//Solution5: Normal for.. of loop
+let group6 = {
+    title: "Our Group",
+    students: ["John", "Pete", "Alice"],
+    showList: function () {
+        for (let student of this.students) {
+            console.log(this.title + ": " + student);
+        }
+    }
+};
+
+group6.showList();
+console.log("\n\n");
+

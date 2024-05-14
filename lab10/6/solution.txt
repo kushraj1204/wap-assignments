@@ -1,0 +1,7 @@
+The program gives output as Josh Edward.
+Here in pattern1 first a function getFirstname is added to exports, which is the module.exports at default.
+Then again exports is reassigned to a new object having a function getLastname. Now this assignment does not correspond to the 
+original module.exports and rather points to a new object.
+In the end though,module.exports is defined to hold a function.
+And since module.exports is what is actually exported when called by require, and now it contains a function,
+when getName() is called after being assigned with require it simply does what is defined in the function i.e. print Josh Edward.

@@ -1,0 +1,25 @@
+1. How many callbacks queues in Node.js and what are they? Give examples to explain how different callbacks are enqueued in different queues.
+
+There are 6 regular queues namely timers,IO/callbacks,idle/prepare,poll,check and close callbacks 
+and 2 special queues for nextTick and Promise in nodejs. So, in total there are 8 queues.
+
+The order of precedence for these queues are in the mentioned order with timers having the first processing and close callbacks being the last.
+
+But nextTick and Promise have a bigger precedence than all others. Even when inside the regular queue processing if, some callback gets added into the 
+nextTick/Promise queue, then they are addressed first and only then the remaining queues are addressed.
+
+
+
+The following statements are enqueued to queues as indicated. 
+
+process.nextTick(() =>  console.log('nextTick 2'));       //Queued to nextTick
+
+setTimeout(() => console.log('timeout 1'), 0);   //Queued to timers
+
+new Promise((resolve, reject) => resolve('Hello')).then(() => console.log('Promise...1'));  //Queued to timers
+
+setImmediate(() => console.log('Immediate'));       //Queued to check
+
+fs.readFile('hello.txt', () => {
+    console.log('readFile....');                //Queued to IO/callbacks
+});                 
