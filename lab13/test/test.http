@@ -1,0 +1,34 @@
+GET http://localhost:9900/books 
+
+###
+
+GET http://localhost:9900/books/1
+
+###
+
+POST http://localhost:9900/books
+content-type: application/json
+
+{
+  "title": "A Brief History of Time",
+  "isbn": "978-0553380168",
+  "publishedDate": "1988",
+  "author": "Stephen Hawking"
+}
+
+
+###
+
+PUT http://localhost:9900/books/1 
+content-type: application/json
+
+{
+    "title": "The Lord of the Rings",
+    "isbn": "978-0261102694",
+    "publishedDate": "1954-07-29",
+    "author": "J. R. R. Tolkien"
+}
+
+###
+
+DELETE http://localhost:9900/books/600c1dee-2ae7-4b0a-82e0-389025d71671
