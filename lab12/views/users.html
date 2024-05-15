@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users</title>
-    <link href="/main.css" rel="stylesheet">
+    <title>Products</title>
+    <link href="/form.css" rel="stylesheet">
 </head>
 <body>
     <form action="/users" method="POST">
-        <div>Email:<input name="email"></div>
-        <div>Username:<input name="username"></div>
-        <div>Password:<input name="password" type="password"></div>
+        <div>Email:<input name="email" type="email" required></div>
+        <div>Username:<input name="username" type="text"  required></div>
+        <div>Password:<input name="password" type="password" required></div>
         <div><button type="submit">Create new User</button></div>
     </form>
 </body>

@@ -11,6 +11,7 @@ app.use('/',homeRouter);
 app.use('/products',productRouter);
 app.use('/users',userRouter);
 app.use((req,resp,next)=>{
+    a++;
     resp.sendFile((path.join(__dirname,'views','404.html')));
 });
 
